@@ -70,6 +70,12 @@ function App() {
       ) : (
         <h2>Todo list is empty</h2>
       )}
+
+      {completedCount > 0 && (
+        <h2>{`You have completed ${completedCount} ${
+          completedCount > 1 ? 'todos' : 'todo'
+        }`}</h2>
+      )}
     </div>
   );
 }
