@@ -23,13 +23,28 @@ function App() {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
+  // Completing a task
+  const toggleCompleteHandler = (id) => {
+    setTodos(
+      todos.map((todo) => {
+        return todo.id === id
+          ? { ...todo, isCompleted: !todo.isCompleted }
+          : { ...todo };
+      })
+    );
+  };
+
   return (
     <div className="App">
       <h1 className="App-title">Todo App</h1>
       <TodoForm addTodo={addTodoHandler} />
 
       {todos.length > 0 ? (
-        <TodoList todos={todos} deleteTodo={deleteTodoHandler} />
+        <TodoList
+          todos={todos}
+          deleteTodo={deleteTodoHandler}
+          toggleComplete={toggleCompleteHandler}
+        />
       ) : (
         <h2>Todo list is empty</h2>
       )}
