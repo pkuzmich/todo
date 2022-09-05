@@ -14,3 +14,9 @@
   width: 100%;
   text-align: left;
 }
+
+.itemIcon {
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+  color: teal;
+}
