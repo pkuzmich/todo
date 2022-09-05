@@ -2,7 +2,8 @@
   margin-left: 20px;
   height: 3rem;
   cursor: pointer;
-  background-color: beige;
+  background-color: #285682;
+  color: #fff;
   font-size: 1.5rem;
   padding: 5px 15px;
   border: none;
@@ -11,9 +12,8 @@
   align-items: center;
 }
 
-.button:hover,
-.button:focus {
-  background-color: rgb(240, 240, 155);
+.button:hover {
+  background-color: #5b8198;
 }
 
 .button:disabled {
