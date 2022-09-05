@@ -12,13 +12,18 @@ function App() {
     setTodos([...todos, newTodo]);
   };
 
+  // Deleting a task
+  const deleteTodoHandler = (index) => {
+    setTodos(todos.filter((_, idx) => idx !== index));
+  };
+
   return (
     <div className="App">
       <h1 className="App-title">Todo App</h1>
       <TodoForm addTodo={addTodoHandler} />
 
       {todos.length > 0 ? (
-        <TodoList todos={todos} />
+        <TodoList todos={todos} deleteTodo={deleteTodoHandler} />
       ) : (
         <h2>Todo list is empty</h2>
       )}
