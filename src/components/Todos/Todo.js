@@ -4,10 +4,13 @@ import styles from './Todo.module.css';
 
 export default function Todo({ todo, deleteTodo }) {
   return (
-    <li className={styles.item} onDoubleClick={() => deleteTodo(todo.id)}>
+    <li className={styles.item}>
       <RiTodoFill className={styles.itemIcon} />
       <span className={styles.itemText}>{todo.text}</span>
-      <RiDeleteBin2Line className={styles.deleteIcon} />
+      <RiDeleteBin2Line
+        className={styles.deleteIcon}
+        onClick={() => deleteTodo(todo.id)}
+      />
       <FaCheck className={styles.checkIcon} />
     </li>
   );
