@@ -12,10 +12,11 @@ export default function TodosActions({
       <Button title="Reset all tasks" onClick={resetTodos}>
         <RiRefreshLine />
       </Button>
+
       <Button
         title="Delete all completed tasks"
         onClick={deleteCompletedTodos}
-        disable={!completedExist}
+        disable={+!completedExist}
       >
         <RiDeleteBin2Line />
       </Button>
