@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import TodoForm from './components/Todos/TodoForm';
 import TodoList from './components/Todos/TodoList';
 import './App.css';
+import TodosActions from './components/Todos/TodosActions';
 
 function App() {
   // Task array state
@@ -38,7 +39,7 @@ function App() {
     <div className="App">
       <h1 className="App-title">Todo App</h1>
       <TodoForm addTodo={addTodoHandler} />
-
+      <TodosActions />
       {todos.length > 0 ? (
         <TodoList
           todos={todos}
