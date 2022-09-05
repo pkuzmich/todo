@@ -49,10 +49,14 @@ function App() {
     <div className="App">
       <h1 className="App-title">Todo App</h1>
       <TodoForm addTodo={addTodoHandler} />
-      <TodosActions
-        resetTodos={resetTodosHandler}
-        deleteCompletedTodos={deleteCompletedTodosHandler}
-      />
+
+      {todos.length > 0 && (
+        <TodosActions
+          resetTodos={resetTodosHandler}
+          deleteCompletedTodos={deleteCompletedTodosHandler}
+        />
+      )}
+
       {todos.length > 0 ? (
         <TodoList
           todos={todos}
