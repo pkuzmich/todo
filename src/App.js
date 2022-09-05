@@ -35,11 +35,16 @@ function App() {
     );
   };
 
+  // Reset all tasks
+  const resetTodosHandler = () => {
+    setTodos([]);
+  };
+
   return (
     <div className="App">
       <h1 className="App-title">Todo App</h1>
       <TodoForm addTodo={addTodoHandler} />
-      <TodosActions />
+      <TodosActions resetTodos={resetTodosHandler} />
       {todos.length > 0 ? (
         <TodoList
           todos={todos}
