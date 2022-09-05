@@ -11,17 +11,16 @@ function App() {
   // Adding a new task to the array of tasks
   const addTodoHandler = (text) => {
     const newTodo = {
-      text: text,
+      text,
       isCompleted: false,
       id: uuidv4(),
     };
-    console.log(newTodo);
     setTodos([...todos, newTodo]);
   };
 
   // Deleting a task
-  const deleteTodoHandler = (index) => {
-    setTodos(todos.filter((_, idx) => idx !== index));
+  const deleteTodoHandler = (id) => {
+    setTodos(todos.filter((todo) => todo.id !== id));
   };
 
   return (
