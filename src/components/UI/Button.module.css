@@ -1,0 +1,22 @@
+.button {
+  margin-left: 20px;
+  height: 3rem;
+  cursor: pointer;
+  background-color: #285682;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #5b8198;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
