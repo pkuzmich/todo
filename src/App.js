@@ -8,6 +8,7 @@ import TodosActions from './components/Todos/TodosActions';
 function App() {
   // Task array state
   const [todos, setTodos] = useState([]);
+  const [error, setError] = useState(false);
 
   // Adding a new task to the array of tasks
   const addTodoHandler = (text) => {
@@ -16,7 +17,13 @@ function App() {
       isCompleted: false,
       id: uuidv4(),
     };
-    setTodos([...todos, newTodo]);
+
+    if (newTodo.text) {
+      setTodos([...todos, newTodo]);
+      setError(false);
+    } else {
+      setError(true);
+    }
   };
 
   // Deleting a task
@@ -33,16 +40,19 @@ function App() {
           : { ...todo };
       })
     );
+    setError(false);
   };
 
   // Reset all tasks
   const resetTodosHandler = () => {
     setTodos([]);
+    setError(false);
   };
 
   // Delete all completed tasks
   const deleteCompletedTodosHandler = () => {
     setTodos(todos.filter((todo) => !todo.isCompleted));
+    setError(false);
   };
 
   // Completed tasks counter
@@ -51,7 +61,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="App-title">Todo App</h1>
-      <TodoForm addTodo={addTodoHandler} />
+      <TodoForm addTodo={addTodoHandler} error={error} />
 
       {todos.length > 0 && (
         <TodosActions
@@ -76,6 +86,8 @@ function App() {
           completedCount > 1 ? 'todos' : 'todo'
         }`}</h2>
       )}
+
+      {error && <h2 className="error">Todo is empty</h2>}
     </div>
   );
 }

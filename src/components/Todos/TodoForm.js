@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Button from '../UI/Button';
 import styles from './TodoForm.module.css';
 
-export default function TodoForm({ addTodo }) {
+export default function TodoForm({ addTodo, error }) {
   // Create a managed element of the task array
   const [text, setText] = useState('');
 
@@ -17,7 +17,7 @@ export default function TodoForm({ addTodo }) {
 
   return (
     <div className={styles.todoFormContainer}>
-      <form>
+      <form className={`${error ? styles.error : ''}`}>
         <input
           type="text"
           placeholder="Enter new todo"
