@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Todo App</h1>
+      <h1 className="App-title">Todo App</h1>
       <TodoForm addTodo={addTodoHandler} />
       <TodoList todos={todos} />
     </div>

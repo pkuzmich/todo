@@ -15,14 +15,16 @@ export default function TodoForm({ addTodo }) {
   };
 
   return (
-    <form>
-      <input
-        type="text"
-        placeholder="Enter new todo"
-        value={text}
-        onChange={(event) => setText(event.target.value)}
-      />
-      <button onClick={addNewTodo}>Add</button>
-    </form>
+    <div className={styles.todoFormContainer}>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter new todo"
+          value={text}
+          onChange={(event) => setText(event.target.value)}
+        />
+        <button onClick={addNewTodo}>Add</button>
+      </form>
+    </div>
   );
 }
