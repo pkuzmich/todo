@@ -24,7 +24,9 @@ export default function TodoForm({ addTodo }) {
           value={text}
           onChange={(event) => setText(event.target.value)}
         />
-        <Button onClick={addNewTodo}>Add</Button>
+        <Button onClick={addNewTodo} title="Add task">
+          Add
+        </Button>
       </form>
     </div>
   );
