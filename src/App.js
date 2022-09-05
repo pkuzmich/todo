@@ -40,11 +40,19 @@ function App() {
     setTodos([]);
   };
 
+  // Delete all completed tasks
+  const deleteCompletedTodosHandler = () => {
+    setTodos(todos.filter((todo) => !todo.isCompleted));
+  };
+
   return (
     <div className="App">
       <h1 className="App-title">Todo App</h1>
       <TodoForm addTodo={addTodoHandler} />
-      <TodosActions resetTodos={resetTodosHandler} />
+      <TodosActions
+        resetTodos={resetTodosHandler}
+        deleteCompletedTodos={deleteCompletedTodosHandler}
+      />
       {todos.length > 0 ? (
         <TodoList
           todos={todos}
