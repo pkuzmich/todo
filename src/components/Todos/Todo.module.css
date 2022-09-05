@@ -11,7 +11,7 @@
 }
 
 .itemText {
-  width: 100%;
+  flex-grow: 1;
   text-align: left;
 }
 
@@ -19,4 +19,32 @@
   font-size: 1.8rem;
   margin-right: 0.5rem;
   color: teal;
+}
+
+.completed {
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+.checkIcon,
+.deleteIcon {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: lightgray;
+  padding: 0 7px;
+  transition: transform 0.3s;
+}
+
+.checkIcon:hover,
+.deleteIcon:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
+.checkIcon:hover {
+  color: green;
+}
+
+.deleteIcon:hover {
+  color: red;
 }
