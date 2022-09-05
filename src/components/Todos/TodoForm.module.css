@@ -16,18 +16,3 @@
   border: none;
   border-radius: 5px;
 }
-
-.todoFormContainer button {
-  margin-left: 20px;
-  height: 3rem;
-  cursor: pointer;
-  background-color: beige;
-  font-size: 1.5rem;
-  padding: 5px 15px;
-  border: none;
-  border-radius: 5px;
-}
-
-.todoFormContainer button:hover {
-  background-color: rgb(240, 240, 155);
-}
