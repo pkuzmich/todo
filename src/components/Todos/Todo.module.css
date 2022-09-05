@@ -1,4 +1,4 @@
-.todo {
+.item {
   display: flex;
   align-items: center;
   padding: 1rem;
@@ -10,7 +10,7 @@
   background-color: #fbfef9;
 }
 
-.todoText {
+.itemText {
   width: 100%;
   text-align: left;
 }
