@@ -1,6 +1,5 @@
 import { RiDeleteBin2Line, RiRefreshLine } from 'react-icons/ri';
 import Button from '../UI/Button';
-import styles from './TodosActions.module.css';
 
 export default function TodosActions({
   resetTodos,
@@ -8,7 +7,7 @@ export default function TodosActions({
   completedExist,
 }) {
   return (
-    <div className={styles.actionsContainer}>
+    <div>
       <Button title="Reset all tasks" onClick={resetTodos}>
         <RiRefreshLine />
       </Button>

@@ -4,6 +4,7 @@ import TodoForm from './components/Todos/TodoForm';
 import TodoList from './components/Todos/TodoList';
 import './App.css';
 import TodosActions from './components/Todos/TodosActions';
+import {Toolbar} from "./components/UI/Toolbar";
 
 function App() {
   // Task array state
@@ -61,15 +62,18 @@ function App() {
   return (
     <div className="App">
       <h1 className="App-title">Todo App</h1>
-      <TodoForm addTodo={addTodoHandler} error={error} />
 
-      {todos.length > 0 && (
-        <TodosActions
-          resetTodos={resetTodosHandler}
-          deleteCompletedTodos={deleteCompletedTodosHandler}
-          completedExist={!!completedCount /* !!0 = false, !!number = true */}
-        />
-      )}
+      <Toolbar>
+        <TodoForm addTodo={addTodoHandler} error={error} />
+
+        {todos.length > 0 && (
+          <TodosActions
+            resetTodos={resetTodosHandler}
+            deleteCompletedTodos={deleteCompletedTodosHandler}
+            completedExist={!!completedCount /* !!0 = false, !!number = true */}
+          />
+        )}
+      </Toolbar>
 
       {todos.length > 0 ? (
         <TodoList
