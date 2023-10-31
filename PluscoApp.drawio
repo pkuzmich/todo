@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-31T16:21:17.394Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.76" etag="muPnK1cv7lkCA8XSySXu" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-31T16:27:16.287Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.76" etag="wh0MeyzoC0zv4qCwESdv" version="22.0.8" type="github">
   <diagram name="Page-1" id="8faaFUQ-8QC-oTlVmQn0">
     <mxGraphModel dx="2276" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -111,10 +111,10 @@
         <mxCell id="J4beB_igEW5IKAxdDDhX-31" value="&lt;font style=&quot;font-size: 14px;&quot; face=&quot;monospace&quot;&gt;Profile&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="650" y="430" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="J4beB_igEW5IKAxdDDhX-33" value="&lt;font style=&quot;&quot; face=&quot;monospace&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Authentication&lt;br&gt;&lt;/span&gt;&lt;/font&gt;Store" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="J4beB_igEW5IKAxdDDhX-33" value="&lt;font style=&quot;&quot; face=&quot;monospace&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Authentication&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;monospace&quot;&gt;Store&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-53" y="700" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="J4beB_igEW5IKAxdDDhX-34" value="&lt;font style=&quot;font-size: 14px;&quot; face=&quot;monospace&quot;&gt;User&amp;nbsp;&lt;/font&gt;Store" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="J4beB_igEW5IKAxdDDhX-34" value="&lt;font style=&quot;font-size: 14px;&quot; face=&quot;monospace&quot;&gt;User Store&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-53" y="760" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="rSWFoihY8Tw9ghbF8Qy2-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J4beB_igEW5IKAxdDDhX-39" target="J4beB_igEW5IKAxdDDhX-41">
@@ -137,8 +137,8 @@
             <mxPoint x="545" y="739" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J4beB_igEW5IKAxdDDhX-43" value="&lt;font style=&quot;font-size: 14px;&quot; face=&quot;monospace&quot;&gt;Re-usable UI components&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="510" y="700" width="120" height="40" as="geometry" />
+        <mxCell id="J4beB_igEW5IKAxdDDhX-43" value="&lt;font style=&quot;font-size: 14px;&quot; face=&quot;monospace&quot;&gt;Re-usable UI components&lt;br&gt;&lt;/font&gt;&lt;code&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;without business logic&lt;/font&gt;&lt;/code&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="700" width="120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="J4beB_igEW5IKAxdDDhX-45" value="&lt;code&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;{some-module&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/font&gt;&lt;/code&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="327" y="610" width="120" height="40" as="geometry" />
